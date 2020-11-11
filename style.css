@@ -5,3 +5,17 @@ body{
 canvas{
     border: 1px solid black;
 }
+
+.container{
+    background-color:lightpink;
+    display: grid;
+    grid-template-columns:1fr 800px 1fr;
+}
+
+.left{
+    background-color: lightcoral;
+}
+
+.right{
+    background-color: lightcoral;
+}
