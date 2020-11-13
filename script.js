@@ -31,11 +31,25 @@ let drawMainAxes = function(){
     ctx.closePath();
 }
 
+let drawTextAxes = function (){
+    ctx.font = "8px Arial";
+    ctx.fillStyle = 'white';
+    ctx.fillText('Hello world', 20, 50);
+    for (let x =0; x<width; x+= step){
+        ctx.fillText(x - 400, x, height/2 + 10);
+    }
 
-const step = 10;
-let a = drawCoordPlane(step);
-let b = drawMainAxes();
-ctx.stroke();
+    for (let y =0; y<height; y+= step){
+        ctx.fillText(y - height/2, width/2 - 15, y);
+    }
+}
+
+const step = 20;
+drawCoordPlane(step);
+drawMainAxes();
+drawTextAxes();
+
+
 console.log(a,'hello');
 
 
