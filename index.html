@@ -7,15 +7,23 @@
     <meta charset="UTF-8">
 </head>
 
-<body>
+<body class="preview-box">
     <h1>Тут будет координатная плоскость</h1>
     <div class="container">
         <div class="left">
             <form>
                 <select>
                     <option>Начало</option>
-                <input type="submit">
+                    <input type="submit">
+
             </form>
+            <div>
+                <button onclick=clearCanvas()>Очистить</button>
+                <button onclick=drawFunctionQuad(2)>y = x<sup>2</sup></button>
+                <button onclick=drawFunctionQuad(3)>y = x<sup>3</sup></button>
+                <button onclick=drawFunctionQuad(4)>y = x<sup>4</sup></button>
+            </div>
+
         </div>
         <div>
             <canvas id="canvasid" width="800px" height="600px">

@@ -1,21 +1,34 @@
-body{
+body {
     background-color: pink;
     text-align: center;
 }
-canvas{
+
+canvas {
     border: 1px solid black;
 }
 
-.container{
-    background-color:lightgray;
+.container {
+    background-color: lightgray;
     display: grid;
-    grid-template-columns:1fr 800px 1fr;
+    grid-template-columns: 1fr 800px 1fr;
 }
 
-.left{
+.left {
     background-color: lightcoral;
 }
 
-.right{
+.right {
     background-color: lightcoral;
+}
+
+
+/*это просто градиентный фон*/
+
+.preview-box {
+    border: 1px solid #999;
+    background: #991599;
+    background: -moz-linear-gradient(left, #991599 0%, #e889cf 100%);
+    background: -webkit-linear-gradient(left, #991599 0%, #e889cf 100%);
+    background: linear-gradient(to right, #991599 0%, #e889cf 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#991599 0%', endColorstr='undefined', GradientType=1);
 }
